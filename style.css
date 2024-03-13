@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding-block: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  background-color: #011f19;
+  /* color: #fff; */
+}
+
+nav > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+
+nav > a:first-child {
+  font-weight: 500px;
+  padding-bottom: 0.5rem;
+  color: #106854;
+  border-bottom: 2px solid #106854;
+  margin-top: 0.5rem;
+}
+
+nav > button {
+  background-color: #27e1b2;
+  color: #fff;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 9px;
+  /* font-size: ; */
+}
+
+.banner {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+  background-color: #011f19;
+}
+
+.bannerContent {
+  size: 2rem;
+  font-size: 19px;
+}
+
+.bannerContent > h1 {
+  width: 400px;
+  color: #dedfdf;
+  text-transform: uppercase;
+}
+
+.bannerContent > h1 > span {
+  color: #29e1b7;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.bannerContent > p {
+  margin-block: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  width: 400px;
+  /* opacity: 6; */
+}
+.bannerContent > button {
+  color: #fff;
+  /* border: 1px solid #fff; */
+  text-transform: capitalize;
+  border-radius: 9px;
+  padding: 0.4rem 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #29e1b7;
+}
+
+/* form stylling */
+
+form {
+  width: 250px;
+  padding: 2rem;
+  border: 1px solid gray;
+  background-color: #ffffff05;
+  border-radius: 15px;
+}
+.btn {
+  display: flex;
+  gap: 5px;
+}
+
+.btn > button {
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  border: none;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0.3rem 2.6rem;
+  background-color: #29e1b7;
+}
+.inputBox {
+  margin-top: 1rem;
+}
+.inputBox > label {
+  margin-bottom: 5px;
+  font-size: 10px;
+  gap: 3px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.fa-asterisk {
+  font-size: 5px;
+  color: #27e1b2;
+}
+.inputBox > select {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 7px;
+  padding: .4rem 7px;
+  color: white;
+  font-size: 8px;
+  text-transform: capitalize;
+}
+.innerInputBox {
+  display: flex;
+}
+.innerInputBox > input {
+  border: 1px solid grey;
+  width: 100%;
+  background-color: transparent;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: .4rem;
+  color: #fff;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.innerInputBox > input::placeholder {
+  font-weight: 600;
+  padding-left: 7px;
+  font-size: 8px;
+}
+.innerInputBox > select {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .4rem;
+  color: #fff;
+  font-size: 10px;
+  text-transform: capitalize;
+  background: #27e1b2;
+}
+.innerInputBox > select {
+  font-size: 7px;
+  text-transform: uppercase;
+}
+form > button {
+  background-color: #29e1b7;
+  width: 100%;
+  margin-block: 1rem;
+  padding: 0.4rem;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
