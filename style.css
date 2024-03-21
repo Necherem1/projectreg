@@ -2,7 +2,18 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-color: #011f19;
+  padding: 0.3rem;
+}
+.genLayout {
+  margin: auto;
+  max-width: 900px;
+}
 nav {
   padding-block: 0.8rem;
   display: flex;
@@ -10,6 +21,9 @@ nav {
   justify-content: end;
   gap: 15px;
   background-color: #011f19;
+  margin: auto;
+  padding-block: 0.8rem;
+  max-width: 900px;
   /* color: #fff; */
 }
 
@@ -46,6 +60,12 @@ nav > button {
 }
 
 .bannerContent {
+  width: 420px;
+  background-color: transparent;
+  padding: 1rem;
+  margin: auto;
+  display: block;
+  height: 300px;
   size: 2rem;
   font-size: 19px;
 }
@@ -123,7 +143,7 @@ form {
   background-color: transparent;
   width: 100%;
   border-radius: 7px;
-  padding: .4rem 7px;
+  padding: 0.4rem 7px;
   color: white;
   font-size: 8px;
   text-transform: capitalize;
@@ -137,7 +157,7 @@ form {
   background-color: transparent;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
-  padding: .4rem;
+  padding: 0.4rem;
   color: #fff;
   font-size: 10px;
   text-transform: capitalize;
@@ -150,7 +170,7 @@ form {
 .innerInputBox > select {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-  padding: .4rem;
+  padding: 0.4rem;
   color: #fff;
   font-size: 10px;
   text-transform: capitalize;
@@ -171,4 +191,123 @@ form > button {
   font-size: 10px;
   font-weight: 600;
   text-transform: capitalize;
+}
+
+/* section 1 styling */
+
+.secOne {
+  background-color: #094b3f;
+}
+
+.investLayout {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.investContent {
+  width: 50%;
+}
+.investContent > h1 {
+  font-size: 25px;
+  margin-top: 2rem;
+}
+.investContent > p {
+  font-size: 14px;
+  margin-block: 1rem;
+}
+
+.money {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.moneyText {
+  margin-block: 0.4rem;
+}
+
+.moneyText > span {
+  font-size: 12px;
+  margin-block: 1rem;
+}
+.moneyImg {
+  width: 30%;
+}
+.moneyImg > img {
+  width: 100%;
+  margin-left: 100px;
+}
+
+/* section 2 */
+
+.secTwo {
+  background-color: #011f19;
+  color: #fff;
+}
+#Service > h1 {
+  padding-block: 2rem;
+  text-align: center;
+  color: #27e1b2;
+  font-size: 30px;
+}
+.serviceOption {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+}
+
+.serviceCard > img {
+  padding-bottom: 1rem;
+  width: 60px;
+}
+.innerServiceCard {
+  padding-left: 0.2rem;
+  border-left: 2px solid #29e1b7;
+}
+.innerServiceCard > h5 {
+  padding-block: 1rem;
+
+  text-transform: capitalize;
+}
+.innerServiceCard > p {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+/* responsive atyling */
+@media (min-width: 360px) and (max-width: 460px) {
+  nav {
+    justify-content: center;
+  }
+  .banner {
+    flex-direction: column;
+    height: 100%;
+    gap: 0.1rem;
+  }
+  .bannerContent {
+  }
+  .bannerContent > h1 {
+    width: 70%;
+  }
+  .bannerContent>p{
+    font-size: 100%;
+  }
+.investLayout{
+  flex-direction: column;
+}
+.investContent{
+  width: 100%;
+}
+
+.moneyImg{
+  width: 70%;
+}
+.moneyImg>img{
+  margin-left: auto;
+}
+.serviceOption{
+  flex-direction: column;
+  margin: auto;
+}
 }
